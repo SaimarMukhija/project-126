@@ -35,7 +35,15 @@ function draw(){
       document.getElementById("songname").innerHTML = "playing peter pan song "
    }
  }
-
+ if(scoreRightWrist > 0.2)
+ {
+   circle(rightWristX, rightWristY,20);
+   song2.stop();
+   if(song1_status == false ) {
+      song1.play();
+      document.getElementById("songname").innerHTML = "harry poter song "
+   }
+ }
 }
  function preload()
  {
